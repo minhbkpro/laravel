@@ -3,22 +3,6 @@
 
 <head>
   <title>Salted | A Responsive Email Template</title>
-  <!--
-
-    SALTED | A RESPONSIVE EMAIL TEMPLATE
-    =====================================
-
-    Based on code used and tested by Litmus (@litmusapp)
-    Originally developed by Kevin Mandeville (@KEVINgotbounce)
-    Cleaned up by Jason Rodriguez (@rodriguezcommaj)
-    Presented by A List Apart (@alistapart)
-
-    Email is surprisingly hard. While this has been thoroughly tested, your mileage may vary.
-    It's highly recommended that you test using a service like Litmus and your own devices.
-
-    Enjoy!
-
- -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <style type="text/css">
@@ -209,7 +193,7 @@
                   <tr>
                     <td bgcolor="#ffffff" width="100" align="left">
                       <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                        <img alt="Logo" src="{{ $message->embed(public_path().'/images/emails/logo.jpg') }}" width="52" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0">
+                        <img alt="Logo" src="{{ asset('/images/emails/logo.jpg') }}" width="52" height="78" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 16px;" border="0">
                       </a>
                     </td>
                     <td bgcolor="#ffffff" width="400" align="right" class="mobile-hide">
@@ -252,7 +236,7 @@
                               <tr>
                                 <td>
                                   <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                                    <img src="{{ $message->embed(public_path().'/images/emails/responsive-email.jpg') }}" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;" class="img-max">
+                                    <img src="{{ asset('/images/emails/responsive-email.jpg') }}" width="500" height="200" border="0" alt="Can an email really be responsive?" style="display: block; padding: 0; color: #666666; text-decoration: none; font-family: Helvetica, arial, sans-serif; font-size: 16px; width: 500px; height: 200px;" class="img-max">
                                   </a>
                                 </td>
                               </tr>
@@ -347,7 +331,7 @@
                       <tr>
                         <td style="padding: 50px 0 0 0;" align="center">
                           <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                            <img src="{{ $message->embed(public_path().'/images/emails/line-graph.jpg') }}" width="500" height="180" border="0" alt="Mobile opens are on the rise" class="img-max" style="display: block; padding: 0; font-family: Helvetica, Arial, sans-serif; color: #666666; width: 500px; height: 180px;">
+                            <img src="{{ asset('/images/emails/line-graph.jpg') }}" width="500" height="180" border="0" alt="Mobile opens are on the rise" class="img-max" style="display: block; padding: 0; font-family: Helvetica, Arial, sans-serif; color: #666666; width: 500px; height: 180px;">
                           </a>
                         </td>
                       </tr>
@@ -394,7 +378,7 @@
                             <tr>
                               <td align="center" bgcolor="#ffffff" valign="middle">
                                 <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                                  <img src="{{ $message->embed(public_path().'/images/emails/fluid-images.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid images" border="0" class="img-max">
+                                  <img src="{{ asset('/images/emails/fluid-images.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid images" border="0" class="img-max">
                                 </a>
                               </td>
                             </tr>
@@ -417,7 +401,7 @@
                             <tr>
                               <td align="center" bgcolor="#ffffff" valign="middle">
                                 <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                                  <img src="{{ $message->embed(public_path().'/images/emails/fluid-structure.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid structures" border="0" class="img-max">
+                                  <img src="{{ asset('/images/emails/fluid-structure.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Fluid structures" border="0" class="img-max">
                                 </a>
                               </td>
                             </tr>
@@ -452,7 +436,7 @@
                             <tr>
                               <td align="center" bgcolor="#ffffff" valign="middle">
                                 <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                                  <img src="{{ $message->embed(public_path().'/images/emails/media-queries.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Media queries" border="0" class="img-max">
+                                  <img src="{{ asset('/images/emails/media-queries.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Media queries" border="0" class="img-max">
                                 </a>
                               </td>
                             </tr>
@@ -476,7 +460,7 @@
                             <tr>
                               <td align="center" bgcolor="#ffffff" valign="middle">
                                 <a href="http://alistapart.com/article/can-email-be-responsive/" target="_blank">
-                                  <img src="{{ $message->embed(public_path().'/images/emails/bulletproof-buttons.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Bulletproof buttons" border="0" class="img-max">
+                                  <img src="{{ asset('/images/emails/bulletproof-buttons.jpg') }}" width="240" height="130" style="display: block; color: #666666; font-family: Helvetica, arial, sans-serif; font-size: 13px; width: 240px; height: 130px;" alt="Bulletproof buttons" border="0" class="img-max">
                                 </a>
                               </td>
                             </tr>
@@ -514,7 +498,7 @@
           <tr>
             <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide">
               <a href="https://litmus.com/community" target="_blank">
-                <img src="{{ $message->embed(public_path().'/images/emails/litmus-logo.jpg') }}" alt="Litmus" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
+                <img src="{{ asset('/images/emails/litmus-logo.jpg') }}" alt="Litmus" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
               </a>
             </td>
             <td style="padding: 40px 0 0 0;" class="no-padding">
@@ -558,7 +542,7 @@
           <tr>
             <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide">
               <a href="http://templates.mailchimp.com" target="_blank">
-                <img src="{{ $message->embed(public_path().'/images/emails/mailchimp-logo.jpg') }}" alt="Freddie!" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
+                <img src="{{ asset('/images/emails/mailchimp-logo.jpg') }}" alt="Freddie!" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
               </a>
             </td>
             <td style="padding: 40px 0 0 0;" class="no-padding">
@@ -602,7 +586,7 @@
           <tr>
             <td valign="top" style="padding: 40px 0 0 0;" class="mobile-hide">
               <a href="http://www.campaignmonitor.com/resources/" target="_blank">
-                <img src="{{ $message->embed(public_path().'/images/emails/campaign-monitor-logo.jpg') }}" alt="Campaign Monitor" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
+                <img src="{{ asset('/images/emails/campaign-monitor-logo.jpg') }}" alt="Campaign Monitor" width="105" height="105" border="0" style="display: block; font-family: Arial; color: #666666; font-size: 14px; width: 105px; height: 105px;">
               </a>
             </td>
             <td style="padding: 40px 0 0 0;" class="no-padding">
