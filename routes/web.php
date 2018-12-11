@@ -19,4 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
-Route::get('/mail/html', 'MailController@mailFormatHtml');
+Route::group(['prefix' => 'mail'], function () {
+    Route::get('html', 'MailController@mailFormatHtmlShow');
+    Route::post('html', 'MailController@mailFormatHtml');
+});

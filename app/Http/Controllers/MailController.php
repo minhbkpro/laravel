@@ -12,13 +12,26 @@ use App\Models\User;
 class MailController extends Controller
 {
     /**
-     * Send mail with html format.
+     * Show input email page for test send mail with html format.
      *
      * @return \Illuminate\Http\Response
      */
-    public function mailFormatHtml()
+    public function mailFormatHtmlShow()
+    {
+        return view('mail.html');
+    }
+
+    /**
+     * Send mail with html format.
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\Response
+     */
+    public function mailFormatHtml(Request $request)
     {
         $user = User::first();
-        Mail::to('minhbkpro@gmail.com')->send(new MailHtml($user));
+        Mail::to($request->email)->send(new MailHtml($user));
+
+        return back()->with('success', 'The mail has been sent successfully!');
     }
 }
