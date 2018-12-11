@@ -34,6 +34,8 @@ class Html extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.html');
+        return $this->subject('Test mail subject!')
+            ->view('emails.html')
+            ->attach(public_path() . '/images/emails/responsive-email.jpg');
     }
 }
